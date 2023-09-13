@@ -2,7 +2,7 @@ package com.ultimatesystem.event.entities;
 
 import jakarta.persistence.*;
 
-import java.util.Objects;
+import java.util.*;
 
 @Entity
 @Table(name = "tb_atividade")
@@ -12,6 +12,8 @@ public class Atividade {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
+
+    @Column(columnDefinition = "TEXT")
     private String descricao;
     private Double preco;
 
@@ -19,16 +21,20 @@ public class Atividade {
     @JoinColumn(name = "categoria_id")
     private Categoria categoria;
 
+    @ManyToMany(mappedBy = "atividades")
+    private Set<Participante> participantes = new HashSet<>();
+
 
     public Atividade() {
     }
 
-    public Atividade(Integer id, String nome, String descricao, Double preco, Categoria categoria) {
+    public Atividade(Integer id, String nome, String descricao, Double preco, Categoria categoria, Set<Participante> participantes) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
         this.categoria = categoria;
+        this.participantes = participantes;
     }
 
     public Integer getId() {
