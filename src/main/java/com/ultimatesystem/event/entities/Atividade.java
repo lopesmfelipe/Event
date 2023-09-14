@@ -1,7 +1,6 @@
 package com.ultimatesystem.event.entities;
 
 import jakarta.persistence.*;
-
 import java.util.*;
 
 @Entity
@@ -24,6 +23,9 @@ public class Atividade {
     @ManyToMany(mappedBy = "atividades")
     private Set<Participante> participantes = new HashSet<>();
 
+
+    @OneToMany(mappedBy = "atividade")
+    private Set<Bloco> blocos = new HashSet<>();
 
     public Atividade() {
     }
@@ -76,6 +78,15 @@ public class Atividade {
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
     }
+
+    public Set<Participante> getParticipantes() {
+        return participantes;
+    }
+
+    public Set<Bloco> getBlocos() {
+        return blocos;
+    }
+
 
     @Override
     public boolean equals(Object o) {
