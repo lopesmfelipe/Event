@@ -52,17 +52,4 @@ Use ORM, or Object-Relational Mapping, simplifies the experience of interacting 
 &nbsp; 
 
 
-
 As you can see, the data was correctly generated in the database and the Domain Model was successfully implemented.
-
-## How to use? 🔌
-1. Press the **Fork** button (top right the page) to save copy of this project on your account.
-
-2. Download the repository files (project) from the download section or clone this project by typing in the git bash the following command:
-
-       git clone https://github.com/lopesmfelipe/Event-System.git
-3. Run the application in an IDE that has dedicated spring support such as Intellj, Eclipse, Netbeans.
- 
-
-
-
