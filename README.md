@@ -1,6 +1,6 @@
 # Event System !
 
-### This is a Spring Boot project with Java and H2 database, which implements the following conceptual model:
+### This is a Spring Boot project and H2 database, which implements the following conceptual model:
 &nbsp;
 
 ![](images/event-system-model.jpg)
