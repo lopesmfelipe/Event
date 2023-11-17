@@ -38,7 +38,7 @@ To create this system, the following were done:
 
 &nbsp;
 &nbsp;
-Use ORM, or Object-Relational Mapping, simplifies the experience of interacting with a database, bridging the gap between the object-oriented programming world and the relational database world. This is done through the following mechanisms:
+Use ORM, or Object-Relational Mapping, simplifies the experience of interacting with a relational database, bridging the gap between the object-oriented programming world and the relational database world. This is done through the following mechanisms:
 
 - Abstraction of database operations
 - Mapping between objects and tables
