@@ -1,4 +1,4 @@
-# Event System !
+# Event System!
 
 ### This is a Spring Boot project and H2 database, which implements the following conceptual model:
 &nbsp;
