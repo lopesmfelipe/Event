@@ -53,3 +53,46 @@ Use ORM, or Object Relational Mapping, simplifies the experience of interacting 
 
 
 As you can see, the data was correctly generated in the database and the Domain Model was successfully implemented.
+
+
+
+
+# Event System
+
+Welcome to the Event System README! This Spring Boot project, backed by an H2 database, serves as a comprehensive solution for managing academic event activities and participant information. Let's delve into its key components:
+
+## Conceptual Model
+
+![Event System Model](images/event-system-model.jpg)
+
+The system is designed to handle various activities within an academic event, ranging from lectures to workshops and courses. Each activity includes details like name, description, price, and can be segmented into time blocks.
+
+## Getting Started
+
+To get up and running, seed essential data into the H2 database, including participants, activities, categories, and time blocks:
+
+![Seed Data](images/seed.png)
+
+## Database Setup
+
+The system leverages the H2 database for efficient data management:
+
+![H2 Database](images/h2.png)
+
+## Development Journey
+
+- Defined domain entities to encapsulate core functionalities.
+- Utilized Object-Relational Mapping (ORM) with JPA for seamless database interaction.
+- Configured the Spring Boot project for integration with the H2 database.
+- Seeded the H2 database to initialize essential data.
+
+## Object-Relational Mapping (ORM)
+
+ORM simplifies database interactions by abstracting away complexities and enabling seamless mappings between objects and relational structures.
+
+![ORM](images/system.png)
+
+## Conclusion
+
+With meticulously curated data and a robust Domain Model, the Event System on GitHub stands as a testament to successful implementation and commitment to excellence.
+
