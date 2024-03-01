@@ -69,7 +69,7 @@ The system is designed to handle various activities within an academic event, ra
 
 ## Getting Started
 
-To get up and running, seed essential data into the H2 database, including participants, activities, categories, and time blocks:
+To get up and running, seed essential data into the H2 database, including participants, activities, categories, and time blocks :
 
 ![Seed Data](images/seed.png)
 
